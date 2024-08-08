@@ -1,0 +1,22 @@
+{
+  "name": "aula-07-tdd-bdd-api",
+  "version": "1.0.0",
+  "main": "api.js",
+  "scripts": {
+    "start": "PORT=3000 node --watch src/api.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand --injectGlobals false test/",
+    "test:dev": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand --injectGlobals false --watchAll test/",
+    "test:debug": "node --experimental-vm-modules --inspect-brk node_modules/jest/bin/jest jest --runInBand --injectGlobals false --watchAll test/"
+  },
+  "keywords": [],
+  "author": "jamangueira7",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "engines": {
+    "node": "v22.3.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
